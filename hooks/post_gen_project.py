@@ -1,5 +1,6 @@
 def post_gen_function():
     """Post gen function for template"""
+    print("OK")
 
 
 
