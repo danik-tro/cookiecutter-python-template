@@ -1,6 +1,7 @@
 {
-  "project_name": "template",
+  "project_name": "python_project",
   "app_name": "application",
-  "project_short_description": "coolicutter template",
-  "python_version": "3.10.5"
+  "project_short_description": "Project description",
+  "author": "Daniil Trotsenko",
+  "email": "daniil.trotsenko.dev@gmail.com"
 }
