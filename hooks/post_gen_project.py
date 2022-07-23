@@ -1,6 +1,10 @@
+import os
+
+
 def post_gen_function():
     """Post gen function for template"""
-    print("OK")
+    # Initialize repository after genereting project
+    os.system("git init")
 
 
 

@@ -9,12 +9,19 @@ python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
+black = "^22.6.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+mypy = "^0.971"
+pre-commit = "^2.20.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+# Linters
 
+## Black configuration
 [tool.black]
 line-length = 89
 extend-exclude = '''
@@ -23,3 +30,18 @@ extend-exclude = '''
 )
 '''
 target-version = ['py3.10']
+
+## Isort configuration
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+line_length = 89
+### Black-compatible isort configuration
+force_grid_wrap = 0
+use_parentheses = true
+old_finders = true
+
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+addopts = "-p no:warnings -vv"

@@ -2,26 +2,21 @@
 		run \
 		test \
 
-all:
-
-virtual_env:
-	poetry shell
-
-setup: virtual_env
+setup:
 	. poetry install
 	. poetry run pre-commit install
 
 test:
-	. ve/bin/activate; poetry run pytest -v
+	poetry run pytest -v
 
 lint:
-	. ve/bin/activate; flake8
+	poetry run flake8
 
 mypy:
-	. ve/bin/activate; mypy ./dem
+	poetry run mypy ./dem
 
 black:
-	. ve/bin/activate; isort .; black .
+	poetry run isort .; poetry run black .
 
 clean:
 	rm -fr build/
