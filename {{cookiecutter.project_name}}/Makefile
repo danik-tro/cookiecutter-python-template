@@ -13,7 +13,7 @@ lint:
 	poetry run flake8
 
 mypy:
-	poetry run mypy ./dem
+	poetry run mypy ./{{application_name}}
 
 black:
 	poetry run isort .; poetry run black .
