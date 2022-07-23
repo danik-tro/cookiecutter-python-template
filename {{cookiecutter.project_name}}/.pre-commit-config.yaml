@@ -16,11 +16,11 @@ repos:
       - id: "detect-private-key"
 
   - repo: "https://github.com/psf/black"
-    rev: "21.7b0"
+    rev: "22.3.0"
     hooks:
       - id: "black"
         name: "Format code (black)"
-        language_version: "python3.10"
+        language_version: "python310"
 
   - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
     rev: "0.2.1"
@@ -33,7 +33,7 @@ repos:
       - id: "isort"
         args: ["-m", "3", "-tc"]
         name: "Format code (isort)"
-        language_version: "python3.10"
+        language_version: "python310"
         types: ["python"]
 
   - repo: "https://github.com/myint/autoflake"
