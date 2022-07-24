@@ -4,16 +4,19 @@ version = "0.1.0"
 description = "{{cookiecutter.project_description}}"
 authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
 maintainers = "{{cookiecutter.author}} <{{cookiecutter.email}}>"
+
 {%- if cookiecutter.use_classifiers == "Y" -%}
 classifiers = [
     "Topic :: Software Development :: Build Tools",
     "Topic :: Software Development :: Libraries :: Python Modules"
 ]
 {%- endif -%}
+
 packages = [
     { include = "{{cookiecutter.app_name}}" },
 ]
 readme = "README.md"
+
 {%- if cookiecutter.use_links == "Y" -%}
 repository = ""
 homepage = ""

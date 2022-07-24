@@ -16,15 +16,15 @@ mypy:
 	poetry run mypy ./{{cookiecutter.app_name}}
 
 black:
-	poetry run isort .; poetry run black .
+    poetry run isort .; poetry run black .
 
-docs-dev:
+docs_dev:
     poetry run mkdocs serve
 
-docs-build:
+docs_build:
     poetry run mkdocs build
 
-export-dependencies:
+export_dependencies:
     poetry export -f requirements.txt --output requirements.txt
 
 clean:
