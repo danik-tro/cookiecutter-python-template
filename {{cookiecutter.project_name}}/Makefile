@@ -1,39 +1,39 @@
 .PHONY: setup run test
 
 setup:
-    poetry install
-    poetry run pre-commit install
+	poetry install
+	poetry run pre-commit install
 
 test:
-    poetry run pytest -v
+	poetry run pytest -v
 
 lint:
-    poetry run flake8
+	poetry run flake8
 
 mypy:
-    poetry run mypy ./{{cookiecutter.app_name}}
+	poetry run mypy ./{{cookiecutter.app_name}}
 
 black:
-    poetry run isort .; poetry run black .
+	poetry run isort .; poetry run black .
 
 docs_dev:
-    poetry run mkdocs serve
+	poetry run mkdocs serve
 
 docs_build:
-    poetry run mkdocs build
+	poetry run mkdocs build
 
 export_dependencies:
-    poetry export -f requirements.txt --output requirements.txt
+	poetry export -f requirements.txt --output requirements.txt
 
 clean:
-    rm -fr build/
-    rm -fr dist/
-    rm -fr .eggs/
-    find . -name '*.egg-info' -exec rm -fr {} +
-    find . -name '*.egg' -exec rm -f {} +
-    find . -name '*.pyc' -exec rm -f {} +
-    find . -name '*.pyo' -exec rm -f {} +
-    find . -name '*~' -exec rm -f {} +
-    find . -name '__pycache__' -exec rm -fr {} +
-    rm -f .coverage
-    rm -fr htmlcov/
+	rm -fr build/
+	rm -fr dist/
+	rm -fr .eggs/
+	find . -name '*.egg-info' -exec rm -fr {} +
+	find . -name '*.egg' -exec rm -f {} +
+	find . -name '*.pyc' -exec rm -f {} +
+	find . -name '*.pyo' -exec rm -f {} +
+	find . -name '*~' -exec rm -f {} +
+	find . -name '__pycache__' -exec rm -fr {} +
+	rm -f .coverage
+	rm -fr htmlcov/
