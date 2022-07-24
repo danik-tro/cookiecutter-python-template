@@ -1,6 +1,4 @@
-.PHONY: setup \
-        run \
-        test \
+.PHONY: setup run test
 
 setup:
     poetry install
