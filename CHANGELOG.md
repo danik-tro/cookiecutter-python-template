@@ -14,10 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0-beta.1] - yyyy-mm-dd
 
 ### Added
-
-### Removed
+- Supporting docs
+- Supporting for creating python package
+- Configuration VSC in post-hooks
 
 ### Changed
+- Update makefile
+- New context variables
 
 [Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...HEAD
 [0.0.1]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.0.1

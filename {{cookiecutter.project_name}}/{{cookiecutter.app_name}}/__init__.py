@@ -2,7 +2,7 @@
 {{cookiecutter.app_name}}. Write docs for your package here.
 
 
-Example of documenting code using Google format:
+Example of documenting code using Google format
 
     def some_function(a: int, b: int):
         \"\"\"
