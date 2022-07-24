@@ -24,6 +24,9 @@ docs-dev:
 docs-build:
     poetry run mkdocs build
 
+export-dependencies:
+    poetry export -f requirements.txt --output requirements.txt
+
 clean:
 	rm -fr build/
 	rm -fr dist/
