@@ -1,6 +1,7 @@
 {
-  "project_name": "python_project",
-  "app_name": "application",
+  "project": "Python project",
+  "project_name": "{{ cookiecutter.project|lower|replace(' ', '-') }}",
+  "app_name": "{{ cookiecutter.project_name|replace('-', '_') }}",
   "project_description": "Project description",
   "author": "Daniil Trotsenko",
   "email": "daniil.trotsenko.dev@gmail.com",

@@ -3,8 +3,8 @@
 		test \
 
 setup:
-	poetry install
-	poetry run pre-commit install
+    poetry install
+    poetry run pre-commit install
 
 test:
     poetry run pytest -v
