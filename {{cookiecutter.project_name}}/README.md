@@ -1,6 +1,6 @@
 # {{cookiecutter.project_name}}
 
-{{project}}
+{{cookiecutter.project}}
 
 {{cookiecutter.project_description}}
 
