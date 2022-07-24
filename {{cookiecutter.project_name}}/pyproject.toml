@@ -5,23 +5,23 @@ description = "{{cookiecutter.project_description}}"
 authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
 maintainers = "{{cookiecutter.author}} <{{cookiecutter.email}}>"
 
-{%- if cookiecutter.use_classifiers == "Y" -%}
+{% if cookiecutter.use_classifiers == "Y" %}
 classifiers = [
     "Topic :: Software Development :: Build Tools",
     "Topic :: Software Development :: Libraries :: Python Modules"
 ]
-{%- endif -%}
+{% endif %}
 
 packages = [
     { include = "{{cookiecutter.app_name}}" },
 ]
 readme = "README.md"
 
-{%- if cookiecutter.use_links == "Y" -%}
+{% if cookiecutter.use_links == "Y" %}
 repository = ""
 homepage = ""
 documentation = ""
-{%- endif -%}
+{% endif %}
 
 [tool.poetry.dependencies]
 python = "^3.10"
