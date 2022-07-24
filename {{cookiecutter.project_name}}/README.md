@@ -17,6 +17,22 @@ $ make setup
 $ make test
 ```
 
+#### Documentation
+
+##### Locally
+
+Serve docs locally
+
+```bash
+$ make docs-dev
+```
+
+##### Build site
+
+```bash
+$ make docs-build
+```
+
 
 #### Linters requirements & pre-commit hooks
 

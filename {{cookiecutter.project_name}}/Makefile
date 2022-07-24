@@ -18,6 +18,12 @@ mypy:
 black:
 	poetry run isort .; poetry run black .
 
+docs-dev:
+    poetry run mkdocs serve
+
+docs-build:
+    poetry run mkdocs build
+
 clean:
 	rm -fr build/
 	rm -fr dist/
