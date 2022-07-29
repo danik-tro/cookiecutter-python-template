@@ -8,5 +8,6 @@
   "use_classifiers": ["Y", "N"],
   "use_links": ["Y", "N"],
   "heroku": ["Y", "N"],
-  "github_workflow": ["Y", "N"]
+  "github_workflow": ["Y", "N"],
+  "typed_library": ["Y", "N"]
 }

@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 
 def post_gen_function():
@@ -10,6 +11,11 @@ def post_gen_function():
     # Install project dependency
     # Install pre-commit
     os.system("make setup")
+
+    # Remove py.typed if library is not type supported
+    if "{{ cookiecutter.typed_library }}" == "N":
+        file_to_remove = Path(os.getcwd()) / "{{cookiecutter.app_name}}" / "py.typed"
+        os.remove(file_to_remove)
 
 
 if __name__ == "__main__":
